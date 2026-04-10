@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[rgba(0,0,0,0.92)]">
+  <header id="home" class="min-h-screen flex flex-col bg-[rgba(0,0,0,0.9)] text-[white]">
+    <nav
+      class="flex md:justify around h-16 md:px-24 px-4 justify-between bg-linear-to-r/decreasing from--500 to-blue-900 py-2 items-center fixed w-[100%] z-[3]">
+      <img src="images/plogo2-removebg-preview.png" class="size-12">
+      <ul class="hidden md:flex w-[60%] justify-between text-2 font-semibold">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="">WORKS</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+      <p id="menu" class=" md:hidden font-semibold text-3xl">≡</p>
+      <ul id="list"
+        class="hidden font-semibold py-16 w-[200px] h-[90vh] bg-linear-to-bl from-[rgba(0,0,0,0.6)] to-blue-200">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="">WORKS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <p id="exit" class="text-right text-2xl">&#10094</p>
+      </ul>
+    </nav>
+    <div class="font-semibold md:flex-row flex-1 flex-col flex justify-center items-center md:gap-6">
+      <div class=" text-4xl">
+        <p>Hi, I'm </p>
+        <p class="text-blue-800 italic">Promise Smart</p>
+        <p class="md:mb-6">Web Designer</p>
+        <a href="#contact" class="bg-blue-900 px-6 py-2 rounded-[5px] text-sm text-[black]">Contact</a>
+      </div>
+      <div class="blob w-[300px] h-[300px] bg-blue-900 p-8 mt-7">
+        <img src="images/me2-removebg-preview.png" alt="" class="size-[270px] object-contain">
+      </div>
+    </div>
+  </header>
+  <div id="about" class="p-4 pb-16 md:pb-4 md:h-[85vh] bg-[rgba(0,0,0,0.91)] text-[white]">
+    <h4 class="text-3xl font-semibold text-center italic text-blue-900 mb-16">ABOUT ME</h4>
+    <div class="flex-col justify-items-center px-7 md:flex-row flex md:justify-center items-center gap-16">
+      <div id="img-div"
+        class=" h-[300px] w-[290px] md:h-[380px] md:w-[360px] overflow-hidden rounded-[30px] border-[3px] border-blue-300">
+        <img src="images/about me.jpeg" alt="" class="w-full h-full object-cover block">
+      </div>
+      <div class="">
+        <p class="max-w-xs text-center md:max-w-md text-lg">I'm <span
+            class="italic text-blue-300 font-semibold ">Promise Smart</span>, a front-end web designer who enjoys
+          creating simple, clean, and user-friendly
+          websites. I'm ambitious, always ready to learn new things, and I love exploring fresh ideas. I'm also open for
+          collaborations with other designers.
+        </p>
+      </div>
+    </div>
+  </div>
+  <section id="skills"
+    class="h-[fit-content] md:bg-[rgba(0,0,0,0.9)] h-[fit-content] pt-[2rem] pb-[4rem] md:text-[rgba(225,225,225,0.8)] text-[white] relative">
+    <h2
+      class="text-3xl font-semibold text-center italic text-blue-300 mb-16 md:static absolute top-[-20px] left-[41%] z-3">
+      SKILLS</h2>
+    <div class="flex flex-col gap-8 mx-4">
+
+      <!-- <div class="md:flex items-center justify-center gap-12 icons hidden">
+        <div class="text-center font-semibold">
+          <p>HTML</p><img src="images/html1-removebg-preview.png" alt="" class="size-[100px]">
+        </div>
+        <div class="text-center font-semibold">
+          <p>CSS</p><img src="images/css.webp" alt="" class="size-[100px]">
+        </div>
+        <div class="text-center font-semibold">
+          <p>JAVASCRIPT</p><img src="images/javas-removebg-preview.png" alt="" class="size-[100px]">
+        </div>
+        <div class="text-center font-semibold">
+          <p>TAILWIND CSS</p><img src="images/tailwind-removebg-preview.png" alt="" class="size-[100px]">
+        </div>
+        <div class="text-center font-semibold">
+          <p>REACT JS</p><img src="images/react-removebg-preview.png" alt="" class="size-[100px]">
+        </div>
+      </div> -->
+      <div class="flex justify-center items-center gap-[100px] background">
+        <div class="stats">
+          <h3 class="px-6 py-4 rounded-[30px] w-fit text-3xl italics font-bold">My Professional
+            Skills
+          </h3>
+          <div class="w-[fit-content]">
+            <div class="flex justify-between w-[350px] md:w-[400px]">
+              <div class="flex items-center"> <img src="images/html1-removebg-preview.png" alt=""
+                  class="size-[30px] block">
+                <p class="italic">HTML</p>
+              </div>
+              <p>98%</p>
+            </div>
+            <div class="bg-black w-[350px] md:w-[400px] h-[5px]">
+              <div class="bg-blue-300 w-[98%] h-[100%]"></div>
+            </div>
+          </div>
+          <div class="w-[fit-content]">
+            <div class="flex justify-between w-[350px] md:w-[400px]">
+              <div class="flex">
+                <img src="images/css.webp" alt="" class="size-[30px]">
+                <p class="italic">CSS</p>
+              </div>
+              <p>95%</p>
+            </div>
+            <div class="bg-black w-[350px] md:w-[400px] h-[5px]">
+              <div class="bg-blue-300 w-[95%] h-[100%]"></div>
+            </div>
+          </div>
+          <div class="w-[fit-content]">
+            <div class="flex justify-between w-[350px] md:w-[400px]">
+              <div class="flex"><img src="images/javas-removebg-preview.png" alt="" class="size-[30px]">
+                <p class="italic">JAVASCRIPT</p>
+              </div>
+              <p>75%</p>
+            </div>
+            <div class="bg-black w-[350px] md:w-[400px] h-[5px]">
+              <div class="bg-blue-300 w-[75%]] h-[100%]"></div>
+            </div>
+          </div>
+          <div class="w-[fit-content]">
+            <div class="flex justify-between w-[350px] md:w-[400px]">
+              <div class="flex items-center"><img src="images/tailwind-removebg-preview.png" alt="" class="size-[30px]">
+                <p class="italic">TAILWIND CSS</p>
+              </div>
+              <p>90%</p>
+            </div>
+            <div class="bg-black w-[350px] md:w-[400px] h-[5px]">
+              <div class="bg-blue-300 w-[90%] h-[100%]"></div>
+            </div>
+          </div>
+          <div class="w-[fit-content]">
+            <div class="flex justify-between w-[350px] md:w-[400px]">
+              <div class="flex items-center">
+                <img src="images/react-removebg-preview.png" alt="" class="size-[30px]">
+                <p class="italic">REACT JS</p>
+              </div>
+              <p>30%</p>
+            </div>
+            <div class="bg-black w-[350px] md:w-[400px] h-[5px]">
+              <div class="bg-blue-300 w-[30%] h-[100%]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[500px] h-[270px] hidden md:block">
+          <img src="images/coder.jpg" alt="" class="size-[100%] cover md:block">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="WORKS" class="pt-10 pb-16 bg-[rgba(0,0,0,0.87)] flex flex-col justify-center items-center">
+    <h4 class="text-3xl font-semibold text-center italic text-blue-300 mb-16">WORKS</h4>
+    <div class=" block px-4 md:grid grid-cols-3 grid-rows-[200px_auto_fr] gap-4 text-blue-300">
+      <div class="mb-6 overflow-hidden">
+        <a href="/FORM/practice.html" target="blank"
+          class="w-[400px] h-[200px] bg-blue-300 rounded-[20px] overflow-y-hidden">
+          <img src="FORM/back.jpg" alt="" class="size-[100%] object-cover">
+        </a>
+      </div>
+      <div class="mb-6 overflow-hidden">
+        <a href="/tailwind/tailwind.html" target="blank"
+          class="w-[400px] h-[200px] bg-blue-300 rounded-[20px] overflow-y-hidden">
+          <img src="tailwind/images/team4.jpg" alt="" class="size-[100%] object-cover">
+        </a>
+      </div>
+      <div class="mb-6 overflow-hidden">
+        <a href="TABLE 1/table.html" target="blank"
+          class="w-[400px] h-[200px] bg-blue-300 rounded-[20px] overflow-y-hidden">
+          <img src="images/table.jpg" alt="" class="size-[100%] object-cover">
+        </a>
+      </div>
+      <div class="mb-6 overflow-hidden">
+        <a href="JAVASCRIPT/work.html" target="blank"
+          class="w-[400px] h-[200px] bg-blue-300 rounded-[20px] overflow-y-hidden">
+          <img src="JAVASCRIPT/images/school logo.jpg" alt="" class="size-[100%] object-cover">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="h-screen bg-[rgba(0,0,0,0.91)] text-[white] flex flex-col justify-center items-center">
+    <div id="cont" class="my-16 px-4 py-4 rounded-[20px] mb-8  flex-1 flex flex-col justify-center">
+      <div class="mb-8">
+        <p class="text-3xl font-semibold text-center">CONTACT ME</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="6f648b75-6b26-42cd-9bc9-57cecc235709">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name" placeholder="Enter name" required><br>
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="Enter email" required><br>
+          <label for="">Message</label><br>
+          <textarea name="message" placeholder="Your Message" style="height: 200px;" class="pt-4"
+            required> </textarea><br>
+          <input type="submit" class="bg-green-900 text-[white] submit font-semibold">
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class=" flex flex-col items-center h-[30vh]">
+    <div class="flex flex-1 gap-36 flex-row items-center justify-center">
+      <div class="flex flex-col gap-2 justify-center text-center md:text-left">
+        <h3 class="text-5xl text-blue-900">Let's talk</h3>
+        <div class="flex flex-row gap-4 icons mt-2 mb-6 text-lg md:ms-1 m-auto">
+          <div class=""><a href="http://wa.me/2349071397078" target="blank"><i class="fa-brands fa-whatsapp b"></i></a></div>
+          <div class=""><a href="https://instagram.com/promisesmart137" target="blank"><i class="fa-brands fa-instagram"></i></a></div>
+          <div class=""><a href=""><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        <p class=" text-sm text-[rgba(225,225,225,0.4)] text-center">Copyright ©2025 All rights reserved | This template by <span
+          class="text-blue-900">Promise</span>
+        </p>
+      </div>
+      <div class="hidden md:flex flex-col gap-2 text-[rgba(225,225,225,0.3)]">
+        <p class="text-[rgb(225, 225, 225)]">Port Harcourt City, Rivers state, Nigeria.</p>
+        <p>promisesmart137@gmail.com</p>
+        <p>+234 907 139 7078</p>
+        <p>Privacy Policy      |      Term & Conditions</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="index.js"></script>
+
+</html>

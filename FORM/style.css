@@ -1,0 +1,524 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif
+}
+
+header {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(back.jpg);
+    background-size: cover;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    color: black;
+    z-index: 3;
+}
+
+#nav ul {
+    display: flex;
+    /* justify-content: space-around;
+    width: 60%; */
+}
+
+#nav ul li {
+    margin-right: 30px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s 0.5s;
+    cursor: all-scroll;
+
+}
+
+#nav a:hover {
+    color: rgb(157, 27, 27)
+}
+
+#nav nav {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    display: none;
+}
+
+#nav>div {
+    border: 3px solid rgb(157, 27, 27);
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(157, 27, 27);
+}
+
+#nav>div h6 {
+    color: rgb(169, 164, 164);
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 30vh;
+}
+
+.div2 h3 {
+    font-size: 65px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.div2 h1 {
+    font-size: 90px;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+.div2 button {
+    padding: 10px 20px;
+    color: rgb(157, 27, 27);
+    border-radius: 10px;
+    transition: all 500ms 300ms;
+}
+
+.div2 button:hover {
+    background-color: rgb(157, 27, 27);
+    color: white;
+}
+
+/*.................................................header ending..............................................*/
+main {
+    background-color: rgb(240, 237, 237);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 8rem;
+    gap: 20px;
+    place-items: center;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+main div {
+    text-align: center;
+}
+
+#nav2 {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 20px;
+    overflow-y: hidden;
+
+}
+
+#nav2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 500ms 200ms;
+}
+
+#nav2:hover img,
+.bingo section:hover img {
+    transform: scale(1.2)
+}
+
+main h2,
+.food h5,
+#stress h3,
+.getout h3,
+.div3 h4 {
+    font-size: 40px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    color: rgb(157, 27, 27)
+}
+
+main h1,
+.food h3,
+#stress h1,
+.getout h2,
+.div3 h2 {
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+main p {
+    color: rgb(169, 164, 164);
+    line-height: 25px;
+}
+
+/*.................................................main ending..............................................*/
+.food {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(back3.jpg);
+    background-attachment: fixed;
+    /* text-align: center;
+    padding-top: 10%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.food h5 {
+    font-size: 30px;
+}
+
+.food h3 {
+    color: white
+}
+
+/*.................................................food ending..............................................*/
+.bingo {
+    /* height: 60vh; */
+    padding: 5rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(240, 237, 237);
+    ;
+}
+
+.bingo div {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bingo section {
+    width: 400px;
+    height: 220px;
+    overflow-y: hidden;
+    border-radius: 10px;
+    /* margin-bottom: 30px; */
+}
+
+.bingo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    transition: all 500ms 200ms;
+}
+
+/* .bingo section:hover img{
+    transform: scale(1.2);
+
+} */
+
+.bingo .link,
+.bingo .link2,
+.story {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.2s 0.2s;
+}
+
+.bingo .link:hover,
+.bingo .link2:hover,
+.story:hover {
+    color: rgb(157, 27, 27)
+}
+
+.bingo p {
+    margin-top: 20px;
+    line-height: 25px;
+    color: rgb(169, 164, 164);
+    max-width: 350px;
+}
+
+.bingo .link2,
+.story {
+    color: rgb(169, 164, 164);
+    font-size: 16px;
+
+}
+
+/*.................................................bingo ending..............................................*/
+#stress {
+    background-color: rgb(235, 229, 229);
+    text-align: center;
+    padding-top: 8rem;
+}
+
+#nav3 {
+
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+#nav3 div {
+    overflow-y: hidden;
+    border-radius: 20px;
+    position: relative;
+
+
+}
+
+#nav3 div:hover img {
+    transform: scale(1.2);
+}
+
+#nav3 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s 0.5s;
+}
+
+#nav3 div:nth-of-type(1) {
+    grid-row: 1/span 2;
+}
+
+#nav3 div:nth-of-type(2) {
+    grid-row: 1/span 2;
+    grid-column: 2/span 1;
+}
+
+#nav3 div:nth-of-type(5) {
+    grid-column: 1/span 2;
+}
+
+
+
+#nav3 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(246, 232, 232, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: rgb(44, 43, 43);
+    transition: all 0.5s 0.2s;
+
+
+}
+
+#nav3 p:hover {
+    background-color: rgb(157, 27, 27);
+    color: white;
+    cursor: pointer;
+}
+
+/*.................................................bingo ending..............................................*/
+.getout {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(chill.jpg);
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    align-items:center
+}
+
+
+.getout div {
+    margin: auto;
+
+}
+
+/*.................................................getout ending..............................................*/
+
+.div3 {
+    background-color: rgb(244, 242, 240);
+    align-items: center;
+    padding: 6rem 0;
+    display: flex;
+    place-content: center;
+    gap: 20px
+}
+
+
+.div3 nav h2,
+.div3 nav h4 {
+    text-align: center;
+}
+
+.div3 nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    color: #373737;
+    text-align: center;
+
+}
+
+input {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 240px;
+    border: 2px solid rgb(169, 164, 164);
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.div3>div {
+    border-radius: 20px;
+    width: 400px;
+    height: 450px;
+    overflow-y: hidden;
+
+}
+
+form>div {
+    width: fit-content;
+    margin: auto;
+}
+
+.div3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s 0.5s;
+}
+
+.div3>div:hover img {
+    transform: scale(1.2);
+}
+
+/*.................................................div3 ending..............................................*/
+/*....................................media query for tablets.....................*/
+@media screen and (max-width:1024px) {}
+
+/*..................................media query for larger phones...................*/
+@media screen and (max-width:768px) {
+
+    #nav section {
+        display: none;
+    }
+
+    #nav {
+        padding: 1rem 2rem;
+    }
+
+    #nav>i {
+        display: hidden;
+        font-size: 30px;
+    }
+
+    .div2 h1 {
+        font-size: 50px;
+    }
+
+    .div2 h3 {
+        font-size: 30px;
+    }
+
+    /*............main................*/
+    main {
+        padding: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    #nav2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    /*...................... food ...............*/
+
+    /* ...........bingo........ */
+    .bingo {
+        display: block;
+        padding: 1rem 1rem;
+        margin: auto;
+
+    }
+
+    .bingo div {
+        margin-bottom: 20px;
+    }
+
+    .bingo section {
+        width: 350px
+    }
+
+    #nav3 {
+        display: block;
+        padding: 0 2rem;
+
+    }
+
+    #nav3 div {
+        margin-top: 20px;
+    }
+
+}
+
+/*..................................media query for smaller phones...................*/
+@media screen and (max-width:480px) {
+
+    #nav ul {
+        display: none;
+    }
+
+    #nav>i {
+        display: block;
+    }
+
+    .div3 {
+        display: block;
+    }
+
+    input {
+        width: 200px
+    }
+
+    .div3>div {
+        border-radius: 20px;
+        width: 350;
+        height: 350px;
+        display: none;
+        margin: auto;
+    }
+
+    .div3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(dining.jpg);
+        background-size: cover;
+        padding: 10px 0px;
+    }
+
+    .getout {
+        height: 50vh;
+        background-image: none;
+        background-color: white;
+        display: flex;
+    }
+
+    .getout>div {
+        margin: auto;
+
+        align-items: center;
+    }
+}
